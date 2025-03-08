@@ -31,7 +31,7 @@
             ]
           },
           {
-            "group": "For MCP Server Users",
+            "group": "For Hive Users",
             "pages": [
               "products/mcp-hive/users/guide"
             ]
@@ -48,30 +48,11 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/ti-logo-light.svg",
+    "dark": "/logo/ti-logo-light.svg"
   },
   "navbar": {
     "links": [

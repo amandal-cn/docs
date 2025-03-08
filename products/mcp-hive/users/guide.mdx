@@ -1,0 +1,104 @@
+---
+title: 'User Guide'
+description: 'Learn how to use MCP Hive effectively'
+---
+
+## Getting Started with MCP Hive
+
+### Creating Your Workspace
+
+1. **Sign Up and Create Workspace**
+   - Register for an MCP Hive account
+   - Create a new workspace
+   - Add a workspace name and description
+
+2. **Understanding Workspace Dashboard**
+   - View active hives
+   - Monitor usage statistics
+   - Access connection URLs
+
+### Adding Hives to Your Workspace
+
+1. **Browse the Marketplace**
+   - Explore available hives
+   - Filter by categories
+   - Read hive documentation
+
+2. **Add a Hive**
+   - Select desired hive
+   - Click "Add to Workspace"
+   - Configure initial settings
+
+### Configuring Hive Authentication
+
+1. **Set Up Authentication**
+   - Configure required credentials
+   - Add API keys
+   - Set up OAuth tokens if needed
+
+2. **Manage Multiple Credentials**
+   - Organize credentials by hive
+   - Update expired credentials
+   - Rotate API keys
+
+### Connecting to MCP Server
+
+1. **Get Connection URL**
+   - Locate connection URL in workspace
+   - Copy the unique URL
+
+2. **Using with MCP Client**
+   - Connect using MCP protocol
+   - Test connection
+   - Access hive capabilities
+
+<Note>
+Keep your connection URL secure and never share it publicly
+</Note>
+
+## Best Practices
+
+### Security
+- Regularly rotate credentials
+- Use environment variables
+- Monitor access logs
+
+### Performance
+- Monitor usage metrics
+- Optimize request patterns
+- Configure appropriate timeouts
+
+### Troubleshooting
+- Check connection status
+- Verify authentication
+- Review error logs
+
+## Demo and Examples
+
+<CodeGroup>
+  ```python Python
+  from mcp_client import MCPClient
+  
+  # Connect to your MCP Hive workspace
+  client = MCPClient("your-workspace-url")
+  
+  # List available tools
+  tools = client.list_tools()
+  
+  # Invoke a tool
+  response = client.invoke_tool("tool-name", params={})
+  ```
+
+  ```javascript JavaScript
+  import { MCPClient } from 'mcp-client';
+  
+  // Connect to your MCP Hive workspace
+  const client = new MCPClient('your-workspace-url');
+  
+  // List available tools
+  const tools = await client.listTools();
+  
+  // Invoke a tool
+  const response = await client.invokeTool('tool-name', {});
+  ```
+</CodeGroup>
