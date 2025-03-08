@@ -18,23 +18,15 @@
           {
             "group": "Getting Started",
             "pages": [
+              "products/mcp-hive/getting-started/introduction",
               "products/mcp-hive/getting-started/hive-users",
-              "products/mcp-hive/getting-started/hive-creators",
-              "products/mcp-hive/core-concepts"
+              "products/mcp-hive/getting-started/hive-creators"
             ]
           },
           {
-            "group": "For Hive Creators",
+            "group": "Use Cases",
             "pages": [
-              "products/mcp-hive/creators/api-spec",
-              "products/mcp-hive/creators/existing-tools",
-              "products/mcp-hive/creators/faq"
-            ]
-          },
-          {
-            "group": "For Hive Users",
-            "pages": [
-              "products/mcp-hive/users/guide"
+              "products/mcp-hive/demos/hive-demo"
             ]
           }
         ]
