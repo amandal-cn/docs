@@ -24,9 +24,12 @@
             ]
           },
           {
-            "group": "Use Cases",
+            "group": "Demos",
             "pages": [
-              "products/mcp-hive/demos/hive-demo"
+              "products/mcp-hive/demos/firecrawl",
+              "products/mcp-hive/demos/google-doc",
+              "products/mcp-hive/demos/google-chat",
+              "products/mcp-hive/demos/supabase"
             ]
           }
         ]
