@@ -1,55 +1,74 @@
 ---
 title: 'Quick Start'
-description: 'Get started with MCP Hive - The marketplace for MCP capabilities'
+description: 'Get started with MCP Hive - The largest MCP marketplace'
 ---
 
 <Tabs>
   <Tab title="For Users">
-    ### Quick Start for Hive Users
-    
-    Follow these steps to start using MCP Hive:
+    <Steps>
+      <Step title="Create a Workspace">
+        Sign in to MCP Hive and navigate to your workspaces management dashboard. 
+        
+        Create a new workspace by clicking the `Create New Workspace` button. [Workspaces](/products/mcp-hive/core-concepts#workspaces) help you organize and manage your hives in one place.
+      </Step>
+      
+      <Step title="Add Hives">
+        Click on `Add Hive` button and select the hive you want to add to your workspace. You can search for a hive by name or description.
+      </Step>
+      
+      <Step title="Configure Authorization">
+        Click on the `Configure` button against your hive. You can authorize the hive or configure the base URL of the underlying services.
 
-    1. **Create a Workspace**
-       - Sign in to MCP Hive
-       - Create a new workspace to manage your hives
-    
-    2. **Add Hives**
-       - Browse the marketplace
-       - Add desired hives to your workspace
-    
-    3. **Configure Authorization**
-       - Set up authentication for your added hives
-       - Configure any required API keys or credentials
-    
-    4. **Connect to MCP Server**
-       - Copy the connection URL from your workspace
-       - Use this URL to connect your MCP client
-    
-    <Card title="Watch Demo" icon="play">
-      Check out our demo video to see MCP Hive in action
-    </Card>
+        We support `OAuth2`, `API Key` as well as `HTTP Bearer Token` authorization.
+      </Step>
+      
+      <Step title="Connect to MCP Server">
+        Click on the `Connect` button against your hive. This will copy the SSE connection URL to your clipboard. You can now use this URL as an SSE-based MCP server.
+
+        How to use it as STDIO server? [Follow this guide](/products/mcp-hive/core-concepts#sse-connection)
+      </Step>
+    </Steps>
+
+    ### Watch Demo
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/pnyUEO6OjxY"
+      title="MCP Hive Demo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </Tab>
   
   <Tab title="For Creators">
-    ### Quick Start for Hive Creators
-    
-    Create your own hive in two ways:
+    <Steps>
+      <Step title="Choose Creation Method">
+        MCP Hive offers two ways to create your hive: API Specification for existing APIs, or Compose from Tools to combine existing capabilities. Select the method that best suits your needs.
+      </Step>
 
-    1. **Using API Specification**
-       - Provide your API specification
-       - Add metadata (name, description)
-       - Configure authentication
-       - Set relevant tags
-       - Publish your hive
-    
-    2. **Compose from Existing Tools**
-       - Browse available tools
-       - Select and combine tools
-       - Configure the composition
-       - Publish your hive
-    
+      <Step title="Using API Specification">
+        Start by uploading your OpenAPI/Swagger specification. Add relevant metadata like name, description, and tags to help users discover your hive. Configure the authentication requirements and review everything before publishing your hive to the marketplace.
+      </Step>
+
+      <Step title="Compose from Tools">
+        Browse through our collection of existing tools and select the ones you want to combine. Configure how these tools interact with each other, add comprehensive documentation to help users understand your hive's capabilities, and publish it to the marketplace.
+      </Step>
+    </Steps>
+
+    ### Creator Guide
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+      title="Creating Hives Tutorial"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
     <Card title="Create Your First Hive" icon="rocket">
-      Follow our detailed creator guide to publish your first hive
+      Need help? Check our detailed creator documentation.
     </Card>
   </Tab>
 </Tabs>
