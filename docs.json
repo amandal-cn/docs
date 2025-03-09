@@ -31,6 +31,13 @@
               "products/mcp-hive/demos/google-chat",
               "products/mcp-hive/demos/supabase"
             ]
+          },
+          {
+            "group": "Updates",
+            "pages": [
+              "products/mcp-hive/updates/v2.0.2",
+              "products/mcp-hive/updates/v2.0.1"
+            ]
           }
         ]
       },
