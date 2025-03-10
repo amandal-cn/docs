@@ -20,38 +20,44 @@ MCP Hive is built on the [Model Context Protocol (MCP)](https://modelcontextprot
   With MCP Hive, you can create production-ready MCP servers in minutes instead of days. We handle the infrastructure, connection protocols (both stdio and SSE), and authentication flows, so you can focus on building powerful AI applications.
 </Card>
 
-## Create Your Own MCP Servers
+<Note>
+  A hive is a blueprint for an MCP server that defines what capabilities (tools) it offers to LLMs. Learn about MCP Hive's core concepts by following this [guide](/products/mcp-hive/getting-started/key-concepts).
+</Note>
 
-MCP Hive offers two flexible ways to create custom MCP servers:
+## Create Your Own Hives
+
+MCP Hive offers two flexible ways to create custom hives:
 
 1. **Convert Existing APIs**: Upload your OpenAPI/Swagger specifications and transform them into MCP-compatible servers instantly
 2. **Combine Pre-built Tools**: Mix and match capabilities from our library to create custom solutions without writing code
 
 This flexibility means you can create exactly the right set of capabilities for your specific use case, whether you're building on existing APIs or starting fresh.
 
+Follow this [guide](/products/mcp-hive/getting-started/hive-creators) to learn how to create custom hives.
+
 <Note>
-  Learn how to build custom MCP servers by following this [guide](/getting-started/hive-creators).
+  Wondering how to use your hive as an MCP server? [Follow this guide](/products/mcp-hive/getting-started/hive-users).
 </Note>
 
-## Secure Connections to External Services
-
-MCP Hive standardizes authentication for connecting LLMs to external services:
-- OAuth2 for services like Google Drive and Slack
-- API Keys for various platforms
-- Bearer tokens for authenticated services
-- AWS Signature for Amazon services
-
-We handle the security details automatically, so you can connect your LLMs to external services with confidence.
-
-## Discover and Use Existing MCP Servers
+## Discover and Use Existing Hives as MCP Servers
 
 Browse our growing marketplace of MCP servers to find capabilities that enhance your LLM applications:
-- Data analysis tools
-- Content generation services
-- Knowledge retrieval systems
+- GDrive, Google Docs, Google Sheets, Google Calendar
+- Slack, Discord, Telegram
+- Supabase, Postgres, MySQL
 - And much more
 
 Connect to these capabilities instantly without complex setup or integration work.
+
+<Note> 
+  MCP Hive standardizes authentication for connecting LLMs to external services:
+  - OAuth2 for services like Google Drive and Slack
+  - API Keys for various platforms
+  - Bearer tokens for authenticated services
+  - AWS Signature for Amazon services
+
+We handle the security details automatically, so you can connect your LLMs to external services with confidence.
+</Note>
 
 ## Why Use MCP Hive?
 
@@ -74,8 +80,8 @@ Connect to these capabilities instantly without complex setup or integration wor
 
 Ready to extend what your LLMs can do? Choose your path:
 
-- [For Hive Creators](/getting-started/hive-creators): Learn how to build custom MCP servers
-- [For Hive Users](/getting-started/hive-users): Discover how to use existing MCP servers in your applications
-- [Key Concepts](/getting-started/key-concepts): Understand the fundamental concepts of MCP Hive
+- [For Hive Creators](/products/mcp-hive/getting-started/hive-creators): Learn how to build custom hives
+- [For Hive Users](/products/mcp-hive/getting-started/hive-users): Discover how to use existing hives as MCP servers in your applications
+- [Core Concepts](/products/mcp-hive/getting-started/key-concepts): Understand the fundamental concepts of MCP Hive
 
 MCP Hive bridges the gap between powerful AI models and the external capabilities they need to solve real-world problems.
