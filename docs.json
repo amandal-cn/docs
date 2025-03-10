@@ -20,7 +20,8 @@
             "pages": [
               "products/mcp-hive/getting-started/introduction",
               "products/mcp-hive/getting-started/hive-users",
-              "products/mcp-hive/getting-started/hive-creators"
+              "products/mcp-hive/getting-started/hive-creators",
+              "products/mcp-hive/getting-started/key-concepts"
             ]
           },
           {

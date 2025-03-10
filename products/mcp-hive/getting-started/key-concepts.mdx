@@ -1,0 +1,44 @@
+---
+title: 'Key Concepts'
+description: 'Understanding the core concepts of MCP Hive'
+---
+
+## Tool
+
+A tool is a function that an LLM can invoke to perform specific actions or access external capabilities. Tools are the building blocks of MCP servers and represent discrete functionalities like:
+
+- `create_google_doc(file_name)` - Create a new Google Doc
+- `read_file(file_path)` - Read the contents of a file
+- `summarize_text(text)` - Generate a summary of provided text
+- `search_web(query)` - Perform a web search
+
+Tools follow the [MCP specification for tools](https://modelcontextprotocol.io/docs/concepts/tools) and include parameters, return types, and descriptions that help LLMs understand how to use them.
+
+## Hive
+
+A hive is a blueprint for an MCP server that defines what capabilities (tools) it offers to LLMs. Think of it as a collection of tools packaged together for a specific purpose.
+
+You can create hives in two ways:
+1. **From API Specifications**: Convert your existing APIs into an MCP Hive by uploading OpenAPI/Swagger specifications
+2. **From Existing Tools**: Mix and match pre-built capabilities to create powerful custom hives without writing code
+
+<Note>
+  When a hive is added to a workspace and properly configured, it acts as a functional MCP server that LLMs can connect to and use.
+</Note>
+
+## Workspace
+
+Your workspace is where you manage your MCP servers:
+- Add hives to make them operational
+- Configure authentication and connection details
+- Get connection URLs for your LLMs
+
+A workspace serves as your control center for managing the lifecycle of your MCP servers, from configuration to deployment to monitoring.
+
+<Note>
+  Our [technical documentation for hive creators](/getting-started/hive-creators) provides detailed guidance on creating custom hives from scratch, with step-by-step instructions and best practices.
+</Note>
+
+<Note>
+  Follow our [specialized guide for hive users](/getting-started/hive-users) to learn how to use a hive as an operational MCP server in your applications.
+</Note> 
