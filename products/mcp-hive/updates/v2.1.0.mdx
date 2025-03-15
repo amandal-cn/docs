@@ -1,0 +1,86 @@
+---
+title: 'Version 2.1.0'
+description: 'Release notes for MCP Hive version 2.1.0'
+---
+
+<Note>Released on March 15, 2025</Note>
+
+## Summary
+
+Introducing lightning-fast hive creation, MCP server integration, improved tool selection interface, and critical fixes to enhance the overall platform experience.
+
+## ⚡️ Performance Breakthrough
+
+### Hive Creation Under 1 Minute
+
+<Card title="10x Faster Creation" icon="bolt">
+  Reduced creation time from ~10 minutes to just seconds with a completely redesigned architecture.
+</Card>
+
+**Benefits:**
+- Lightning-fast creation: Hives now spin up in seconds rather than minutes
+- No creation limits: Create as many hives as you need without restrictions
+- Same reliable performance: Connection speed remains quick at ~5-6 seconds for initial connection
+
+## ✨ New Features
+
+### Popular MCP Servers Now Available as Hives
+
+<Frame>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/demo-placeholder"
+    title="Demo: Using MCP Server Shell as a Hive"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+<CardGroup cols={2}>
+  <Card title="MCP Server Shell" icon="terminal">
+    Access shell commands directly through the Hive interface
+  </Card>
+  <Card title="Code Executor" icon="code">
+    Execute code snippets in various languages
+  </Card>
+</CardGroup>
+
+_Note: Composition using tools from onboarded MCP servers will be available by next Tuesday_
+
+### Enhanced Tool Selection Interface
+
+<Frame caption="New tool selection interface for composing hives">
+  ![Enhanced Tool Selection Interface](/images/v2.1.0/tool-selection-interface.png)
+</Frame>
+
+Providing a more intuitive experience when:
+- Composing new hives
+- Adding tools to existing hives
+
+### Redesigned Home Page
+
+<Frame caption="New home page organization">
+  ![Redesigned Home Page](/images/v2.1.0/home-page.png)
+</Frame>
+
+Improved organization with dedicated sections for:
+- Hives created by you
+- Popular products
+- Composed hives
+- Popular MCP servers
+
+## 🛠️ Fixes
+
+<AccordionGroup>
+  <Accordion title="OAuth2 Authentication Issues">
+    - Whitelisted telcodr.com and other domains
+    - Google app submitted for verification to ensure seamless authentication
+  </Accordion>
+  <Accordion title="Pinecone Integration">
+    - Addressed silent failures during embedding process
+    - Implemented proper error handling for embedding operations
+    - Ensured consistent vector ID generation for reliable performance
+  </Accordion>
+</AccordionGroup>
