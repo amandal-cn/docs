@@ -1,0 +1,64 @@
+---
+title: 'Claude Desktop Integration'
+description: 'Connect MCP Hives with Claude Desktop'
+---
+
+# Using MCP Hives with Claude Desktop
+
+You can now access MCP Hives with Claude Desktop as an STDIO server, allowing you to extend Claude's capabilities with your custom tools.
+
+## Setup Instructions
+
+<Steps>
+  <Step title="Install mcp-proxy">
+    First, install the mcp-proxy tool using one of these commands:
+    
+    ```bash
+    # Option 1: With uv (recommended)
+    uv tool install mcp-proxy
+    
+    # Option 2: With pipx (alternative)
+    pipx install mcp-proxy
+    ```
+  </Step>
+  
+  <Step title="Get your MCP Server connection URL">
+    Follow the steps in the [Hive Users guide](/products/mcp-hive/getting-started/hive-users#connect-to-mcp-server) to get your SSE connection URL for your hive.
+  </Step>
+  
+  <Step title="Configure Claude Desktop">
+    Add your hive to Claude Desktop by editing the configuration file:
+    
+    ```json
+    {
+      "mcpServers": {
+        "Giphy": {
+          "command": "/Users/amandal/.local/bin/mcp-proxy",
+          "args": [
+            "https://mcp-server.ti.trilogy.com/641b190b/sse"
+          ]
+        }
+      }
+    }
+    ```
+    
+    Follow [this guide](https://modelcontextprotocol.io/quickstart/user#2-add-the-filesystem-mcp-server) for how to open claude's configuration file.
+
+    <Note>
+      Pass the full path to the mcp-proxy. In the example above, it is `/Users/amandal/.local/bin/mcp-proxy`. You can get the full path by running the command `which mcp-proxy` in your terminal.
+    </Note>
+  </Step>
+  
+  <Step title="Restart Claude Desktop">
+    Restart Claude Desktop for the changes to take effect. Your MCP Hive should now be available as an MCP server in Claude Desktop.
+  </Step>
+</Steps>
+
+## Troubleshooting
+
+If you encounter issues connecting your MCP Hive to Claude Desktop:
+
+1. Verify that the mcp-proxy is installed correctly
+2. Ensure the full path to mcp-proxy is correct in your configuration
+3. Check that your SSE connection URL is valid and the hive is properly configured
+4. Make sure all authentication requirements for your hive are met

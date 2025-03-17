@@ -1,0 +1,42 @@
+---
+title: 'Cursor Integration'
+description: 'Connect MCP Hives with Cursor'
+---
+
+# Using MCP Hives with Cursor
+You can easily connect your MCP Hives to Cursor, allowing you to extend your coding assistant with powerful custom tools.
+
+## Setup Instructions
+
+<Steps>
+    <Step title="Get your MCP Server connection URL">
+        Follow the steps in the [Hive Users guide](/products/mcp-hive/getting-started/hive-users#connect-to-mcp-server) to get SSE connection URL for your hive.
+    </Step>
+
+    <Step title="Configure Cursor">
+        1. Open Cursor
+        2. Go to Cursor Settings
+        3. Navigate to Features > MCP Servers
+        4. Click "Add new MCP server"
+        5. Enter a name for your server
+        6. Select "sse" as the Type
+        7. Paste your SSE connection URL in the Server URL field
+        8. Click "Add"
+    </Step>
+</Steps>
+
+<Frame caption="Cursor MCP Server Configuration">
+  ![Cursor MCP Server Configuration](/images/cursor-mcp-server-configuration.png)
+</Frame>
+
+## Using Your MCP Hive in Cursor
+
+Once configured, your MCP Hive will be available to use in Cursor. The AI assistant will automatically detect and use the tools provided by your hive when appropriate for your coding tasks.
+
+<Note>You can use MCP servers in Cursor only in agent mode.</Note>
+
+## Troubleshooting
+
+If you encounter issues connecting your MCP Hive to Cursor:
+1. Verify that your SSE connection URL is correct
+2. Ensure your hive is properly configured and all authentication requirements are met

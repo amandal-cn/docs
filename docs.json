@@ -25,6 +25,13 @@
             ]
           },
           {
+            "group": "Integrations",
+            "pages": [
+              "products/mcp-hive/integrations/claude-desktop",
+              "products/mcp-hive/integrations/cursor"
+            ]
+          },
+          {
             "group": "Demos",
             "pages": [
               "products/mcp-hive/demos/firecrawl",
