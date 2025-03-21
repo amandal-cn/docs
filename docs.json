@@ -37,12 +37,14 @@
               "products/mcp-hive/demos/firecrawl",
               "products/mcp-hive/demos/google-doc",
               "products/mcp-hive/demos/google-chat",
-              "products/mcp-hive/demos/supabase"
+              "products/mcp-hive/demos/supabase",
+              "products/mcp-hive/demos/ephor"
             ]
           },
           {
             "group": "Updates",
             "pages": [
+              "products/mcp-hive/updates/v2.2.0",
               "products/mcp-hive/updates/v2.1.0",
               "products/mcp-hive/updates/v2.0.2",
               "products/mcp-hive/updates/v2.0.1"

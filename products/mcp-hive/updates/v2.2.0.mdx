@@ -1,0 +1,117 @@
+---
+title: 'Version 2.2.0'
+description: 'Release notes for MCP Hive version 2.2.0'
+---
+
+<Note>Released on March 22, 2025</Note>
+
+## Summary
+
+Introducing Ephor integration, comprehensive performance tracking, enhanced tool management capabilities, and several new public MCP servers to expand the platform's functionality and reliability.
+
+## ✨ New Features
+
+### Ephor MCP Server Integration
+
+<Card title="Ephor Integration" icon="brain">
+  Connect LLMs to Ephor for powerful intelligent applications with second brain integration
+</Card>
+
+<Frame>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/uQV1ZbpJ6uE"
+    title="Demo: Ephor Integration"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+See how an Ephor agent helps summarize projects, analyze spiky POVs, and more through the MCP Hive platform!
+
+### Comprehensive Performance Tracking
+
+<Frame>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/vnCu9c_ChfE"
+    title="Demo: Performance Tracking"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+Every tool call is now tracked with detailed metrics including:
+- Success rate percentage
+- Average response time
+- Last 10 failures with error details
+- Last call made with input and output data
+
+### Enhanced Tool Management
+
+<CardGroup cols={2}>
+  <Card title="Tool Testing Interface" icon="vial">
+    Test tools directly within MCP Hive with a new intuitive interface
+  </Card>
+  <Card title="Improved Tool Descriptions" icon="pen">
+    Enhanced tool descriptions and names for better LLM understanding
+  </Card>
+</CardGroup>
+
+<Frame>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/x2SRArRQtxQ"
+    title="Demo: Tool Testing Interface"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</Frame>
+
+### New Public MCP Servers
+
+<CardGroup cols={2}>
+  <Card title="Slack MCP Server" icon="slack">
+    Integrate LLMs with Slack for enhanced workspace collaboration
+  </Card>
+  <Card title="MySQL MCP Server" icon="database">
+    Connect directly to MySQL databases for data operations
+  </Card>
+  <Card title="Twikit MCP Server" icon="cube">
+    Integrate LLMs with twitter
+  </Card>
+  <Card title="Rijksmuseum MCP Server" icon="palette">
+    Access the Rijksmuseum's digital collection API
+  </Card>
+</CardGroup>
+
+## 🛠️ Improvements
+
+<AccordionGroup>
+  <Accordion title="Decoupled Tool Descriptions">
+    Tool descriptions and names are now decoupled from MCP servers through our proxy server, allowing for customization without modifying the original server
+  </Accordion>
+  <Accordion title="Enhanced Tool Metadata">
+    <Frame caption="Original tool description and name">
+      ![Enhanced Tool Metadata](/images/v2.2.0/tool-description-original.png)
+    </Frame>
+    <Frame caption="Improved tool description and name">
+      ![Enhanced Tool Metadata](/images/v2.2.0/tool-description-enhanced.png)
+    </Frame>
+    Improved metadata helps LLMs better understand tool capabilities and usage
+  </Accordion>
+</AccordionGroup>
+
+## 🐛 Critical Fixes
+
+<Card title="Memory Leak Resolution" icon="memory">
+  Fixed a critical memory leak issue where MCP servers started for new connections weren't being terminated when connections dropped, causing server unresponsiveness within 24 hours
+</Card>
+
+This fix significantly improves platform stability and ensures consistent performance even under heavy usage.
