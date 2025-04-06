@@ -1,0 +1,63 @@
+---
+title: 'Version 3.1.0'
+description: 'Enhanced Context Management, Critical Scaling Fixes, and Improved Google Workspace Integration'
+---
+
+<Note>Released on April 6, 2025</Note>
+
+## Major Enhancements
+
+### Enhanced Context Management with Data Model Summaries
+- Introduced automatic data model summaries for each hive, providing better context for LLM interactions
+- LLMs now maintain consistency in schema representation across different tools within a hive
+- Improved schema simplification while preserving core business entities
+- Added related tools and their simplified schemas to the context for better cross-tool consistency
+
+![Data Model Summaries](/images/v3.1.0/data-model-summaries.png)
+
+### Improved Google Workspace Integration
+Enhanced support for multiple Google services with simplified schemas and improved descriptions:
+- [Google Drive](https://mcp-hive.ti.trilogy.com/hives/a3aeb863-5437-4ff2-86b7-7bf3a65f83a7)
+- [YouTube](https://mcp-hive.ti.trilogy.com/hives/60986274-f8f7-4568-a1e3-51395476719d)
+- [Google Slides](https://mcp-hive.ti.trilogy.com/hives/0ba1dcaa-63fb-4ea5-8dab-e8eb9a3d2811)
+- [Google Docs](https://mcp-hive.ti.trilogy.com/hives/f45c2c5b-553e-4d46-9539-7b661b231067)
+
+### Server Information Resource
+- All MCP servers now expose detailed server information including name, summary, and hive description
+- Seamlessly integrate this context into LLM interactions
+- Available for immediate use in Claude Desktop
+
+Watch how you can use server information for your MCP Hive in the Claude Desktop:
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/pXFVMTRSviE" 
+  title="Server Information Resource" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+## Stability Improvements
+
+### Fixed Critical Scaling Issues
+- Resolved SSE connection challenges during multi-instance scaling
+- Implemented robust solution for distributed session management
+- Eliminated downtime issues during releases by optimizing ECS deployment configuration
+
+<Note>
+Read about the issue and how we fixed it in detail [here](https://docs.google.com/document/d/1b9JrA5edaFncuF7y43TAqiji50rChItGz3EGQTzSeNM/edit?usp=sharing).
+</Note>
+
+## User Experience Improvements
+
+### Studio and Workspace Consistency
+- "Configure Test Environment" in Studio now matches "Configure Hive" functionality in Workspace
+- Automatic MCP connection establishment upon Hive creation/updates
+- Prevented duplicate Hive additions in Workspaces
+
+## Technical Details
+- Automated MCP connection establishment - no page refresh required
+- Enhanced validation to prevent duplicate Hive entries
+- Improved deployment configuration to maintain service availability during updates

@@ -44,6 +44,7 @@
           {
             "group": "Updates",
             "pages": [
+              "products/mcp-hive/updates/v3.1.0",
               "products/mcp-hive/updates/v3.0.0",
               "products/mcp-hive/updates/v2.2.0",
               "products/mcp-hive/updates/v2.1.0",
