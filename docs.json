@@ -25,10 +25,18 @@
             ]
           },
           {
+            "group": "For Hive Creators",
+            "pages": [
+              "products/mcp-hive/creators/best-practices",
+              "products/mcp-hive/creators/troubleshooting"
+            ]
+          },
+          {
             "group": "Integrations",
             "pages": [
               "products/mcp-hive/integrations/claude-desktop",
-              "products/mcp-hive/integrations/cursor"
+              "products/mcp-hive/integrations/cursor",
+              "products/mcp-hive/users/troubleshooting"
             ]
           },
           {

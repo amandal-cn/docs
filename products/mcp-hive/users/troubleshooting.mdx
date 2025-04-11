@@ -1,0 +1,98 @@
+---
+title: 'Troubleshooting'
+description: 'Solving common issues when using MCP Hives'
+---
+
+# Troubleshooting Guide for Hive Users
+
+This guide helps you resolve common issues when using hives with integrations like Claude Desktop and Cursor.
+
+## Quick Issue Navigator
+
+| Issue Type | Common Symptoms | Go to Section |
+|------------|-----------------|--------------|
+| 🔌 **Connection** | Can't connect to a hive | [Connection Issues](#connection-issues) |
+| ⏱️ **Timeout** | Connection drops during tool use | [Connection Drops](#connection-drops-during-tool-execution) |
+| 🛠️ **Tool Recognition** | LLM doesn't use the right tool | [Tool Not Being Recognized](#tool-not-being-recognized) |
+| 🔍 **Input Validation** | "Invalid input" errors | [Validation Errors](#validation-errors) |
+| 💻 **Client-Specific** | Issues with Claude or Cursor | [Client-Specific Issues](#client-specific-issues) |
+
+## Connection Issues
+
+### Unable to Connect to a Hive
+
+If your client can't connect to a hive:
+
+1. Verify you have the correct connection URL
+2. Ensure you have stable internet connection
+3. Try restarting your client application
+
+<Note>
+If you continue to experience issues, please contact the hive creator. You can find their contact details on the hive details page.
+</Note>
+
+### Connection Drops During Tool Execution
+
+- Connections may drop if a tool takes longer than 10 seconds to execute. This is a limitation of current clients like Claude Desktop and Cursor
+> You can verify the average response time of each tool from the hive details page.
+- **Solution:** Restart the client and try again, possibly with simpler requests.
+
+<Note>
+The MCP platform is working on a progress update feature that will allow long-running tools to send progress updates, which should resolve these timeout issues in the future.
+</Note>
+
+## Tool Invocation Problems
+
+### Tool Not Being Recognized/Used
+
+If your client application doesn't recognize or use the tools:
+
+1. Verify that the client is connected to the hive.
+![Claude Desktop - Verify Hive Connection](/images/claude/connection-verification.png)
+In Claude Desktop, you can verify that you are connected to the hive by clicking on the tools icon on the bottom left of the screen.
+![Cursor - Verify Hive Connection](/images/cursor/connection-verification.png)
+In Cursor, you can verify that you are connected to the hive by opening the MCP sidebar in the cursor settings.
+
+2. Try rephrasing your request to be more explicit about which MCP server to use.
+
+<Note>
+In Cursor, make sure to use agentic mode and try with claude-3.5 sonnet or claude-3.7 sonnet.
+</Note>
+
+### Validation Errors
+
+If you receive errors about invalid inputs:
+
+1. Ensure you're providing all required information
+2. Even after providing all required information, the tool does not work. Contact the hive creator.
+
+### Authorization Errors
+
+If tool invocation fails with an authorization error:
+
+1. Ensure you have configured the hive with proper permissions. 
+<Note>
+Follow our [instructions](/products/mcp-hive/getting-started/hive-users) on how to use hives as MCP server
+</Note>
+2. After configuring the hive with proper permissions, Restart your client application (Claude Desktop) or refresh the connection (Cursor)
+3. If the issue persists, contact the hive creator. You can find their contact details on the hive details page.
+
+## Known Limitations
+- Cursor has difficulties with complex or nested parameters
+- All popular clients like Claude Desktop, Cursor, and others times out executing tools after 10 seconds. This may result in connection drops. You may need to restart the client application or refresh the connection.
+- MCP converts input parameters to their closest type. For example, `{"team_id": "539"}` might convert to `{"team_id": 539}` (integer). Please report these issues to the hive creator.
+
+## Getting Help
+
+If you continue to experience issues:
+
+1. **First contact the hive creator** - you can find their details on the hive details page
+2. Provide specific details about:
+   - What you were trying to do
+   - The exact error messages
+   - Which client you were using (Claude Desktop, Cursor, etc.)
+   - Any steps you've already tried
+
+<Note>
+While our system automatically captures and reports issues to hive creators, directly contacting the creator can speed up resolution. The creator's contact information is available on the hive details page.
+</Note>
