@@ -1,0 +1,68 @@
+---
+title: 'Version 3.2.0'
+description: 'Unified CLI Installation, Enhanced Security, and Support for Local-Only Services'
+---
+
+<Note>Released on [Current Date]</Note>
+
+## Major Enhancements
+
+### Unified Installation Experience
+- Introduced `@mcp-hive/cli` for streamlined installation across multiple clients
+- Support for `Claude`, `Cursor`, `Windsurf`, `Cline`, and more platforms
+- Simple one-line installation command with interactive configuration
+
+![Installation Command Interface](/images/installation-command-interface.png)
+
+### 🔒 Enterprise-Grade Security
+- Your credentials are now protected with multi-layer encryption at rest
+  ```mermaid
+  graph LR
+    A[Your Credentials] --> B[Encrypted with DEK]
+    B --> C[DEK encrypted with Master Key]
+    style A fill:#ff69b4,stroke:#fff,color:#fff
+    style B fill:#4169e1,stroke:#fff,color:#fff
+    style C fill:#32cd32,stroke:#fff,color:#fff
+  ```
+    <Note>Each user gets their own Data Encryption Key (DEK) which encrypts their sensitive data. This DEK itself is encrypted using a master key managed by a secure Key Management Service (KMS).</Note>
+- Mandatory `API key` authentication for all MCP servers
+
+![API Key Management](/images/api-key-management.png)
+
+### Dynamic Authorization System
+- Runtime authorization flow eliminates the need for pre-authorization of hives
+- Magic authorization links that LLMs can interpret and present to users
+- Seamless authorization process without client restart
+
+### Support for Local-Only Services
+- New local mode enables hives to run directly on user machines
+- Gives us capabily to support services requiring local machine access like Obsidian integration, file system operations
+- Stay tuned for local-only hives - coming over the next few days!
+
+### Ownership Management
+Transfer ownership of a hive to another user with few clicks
+
+- New owner receives an email with a link to accept the ownership
+- Current owner can cancel the ownership transfer at any time before the new owner accepts it
+
+Watch how ownership transfer works:
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/UbVCaASxw24" 
+  title="Ownership Transfer Demo" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+## Documentation Improvements
+
+### Comprehensive Guidelines
+- Detailed [best practices](/products/mcp-hive/creators/best-practices) for building high-quality hives
+- Troubleshooting guides for both [creators](/products/mcp-hive/creators/troubleshooting) and [users](/products/mcp-hive/users/troubleshooting)
+- [Enhanced documentation](/products/mcp-hive/getting-started/hive-users) for how to use hives as MCP servers with API key setup.
+
+## Technical Details
+- CLI tool available on npm: [@mcp-hive/cli](https://www.npmjs.com/package/@mcp-hive/cli)
+- Enhanced security protocol implementation
