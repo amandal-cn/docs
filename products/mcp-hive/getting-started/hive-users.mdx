@@ -24,9 +24,30 @@ Connect to your first MCP server by following these simple steps. You'll learn h
   </Step>
   
   <Step title="Connect to MCP Server">
-    Click on the `Connect` button against your hive. This will copy the SSE connection URL to your clipboard. You can now use this URL as an SSE-based MCP server.
+    Click on the `Install` button against your hive. This will open an installation command interface where you can:
+    
+    ![Installation Command Interface](/images/installation-command-interface.png)
 
-    How to use it as STDIO server? [Follow this guide](/products/mcp-hive/getting-started/hive-creators#sse-connection)
+    1. Choose your platform: `Claude`, `Cursor`, `Cline`, `Windsurf`
+
+    2. Select execution mode: `Local`, `Remote`
+    <Note>
+      In local mode, the hive will be running on your machine unlike remote mode where the hive runs on MCP Hive's servers. This is recommended for MCP servers that need access to your local machine like obsidian, filesystem, etc.
+    </Note>
+
+    3. Copy the generated installation command (e.g., `npx @mcp-hive/cli@latest install --name google_calendar --client claude`)
+
+    4. Run the command in your terminal. When prompted for an `API Key`:
+       - Click on your profile menu
+       - Select "Manage API Keys"
+       - Generate a new API key if you don't have one
+       - Copy and paste the API key into the terminal
+
+    ![API Key Generation](/images/api-key-generation.png)
+
+    <Note>
+    API Key is now required to access Hive as an MCP server irrespective of the execution mode.
+    </Note>
   </Step>
 </Steps>
 
