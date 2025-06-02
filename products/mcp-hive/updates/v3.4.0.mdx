@@ -1,0 +1,76 @@
+---
+title: 'Version 3.4.0'
+description: 'Async Tool Support, API Spec Downloads, and New Productivity Integrations'
+---
+
+<Note>Released on 2025-06-02</Note>
+
+## ⚡ Async Tool Support with Progress Updates
+
+Hive developers can now build truly asynchronous tools that provide real-time progress updates to users. No more waiting in the dark for long-running operations!
+
+![Async Tool Interface](/images/v3.4.0/async-tool.png)
+
+**For Developers:**
+- Simple toggle to enable async mode for any tool
+- Webhook-based progress reporting system
+- Webhook URLs automatically provided in headers (`MCPHive-Webhook` and `Ephor-Webhook`)
+- Follow our [progress update contract](https://docs.google.com/document/d/1tX5W0GiEyFblomdqf29m1pIPxe1kuVna4dzwjarH9Gw/edit?tab=t.0#heading=h.ufrleqbo7rh6) to send progress events seamlessly
+
+![Async Settings Configuration](/images/v3.4.0/async-settings.png)
+
+**For Users:**
+- Real-time progress updates for long-running operations
+- Better visibility into what's happening behind the scenes
+- No more guessing if your request is still processing
+
+<Note>Any MCP client that supports progress updates will automatically receive real-time progress for all your async tools</Note>
+
+## 📋 API Specification Downloads
+
+Hive owners and contributors can now easily access and download their hive's API specifications for better integration and documentation.
+
+![Download API Spec](/images/v3.4.0/download-api-spec.png)
+
+**Available Formats:**
+- JSON format for programmatic use
+- YAML format for human-readable documentation
+- Instant download from the hive management interface
+
+## 🆕 New Productivity Hives
+
+#### **Workflowy Integration**
+**[Workflowy](https://mcp-hive.ti.trilogy.com/hives/ca0ee997-9e24-44f7-bfbf-32c364b05eb3)** - Your favorite outlining tool, now AI-accessible!
+
+**Setup Instructions:**
+1. Use your Workflowy username and password
+2. To create an app password for your account:
+   - Click on **Settings** from your user menu
+   - Click on **Set Password** 
+3. Use this app password for secure authentication
+
+Perfect for AI agents to help you organize thoughts, create outlines, and manage your knowledge structure.
+
+#### **Google Calendar (Enhanced)**
+**[Google Calendar](https://mcp-hive.ti.trilogy.com/hives/9ca136db-87ae-447b-9124-423a2caf2c3a)** - Completely redesigned calendar integration!
+
+**What You Get:**
+- ✅ Single-click OAuth authentication
+- ✅ Well-defined tool set optimized for AI agent interaction
+- ✅ Comprehensive calendar management capabilities
+- ✅ Better reliability and performance
+
+<Note>**Important:** We'll be deprecating the previous Google Calendar hive next week. Please migrate to this new version for continued support.</Note>
+
+### 🔮 Coming Soon
+
+**Insights Gathering**
+Hive developers will soon be able to enable insight collection to understand how users interact with their tools. This data will help developers:
+- Improve tool descriptions and functionality
+- Understand common use patterns
+- Optimize their hives for better AI agent performance
+
+---
+
+
+*All new hives are available for installation using our unified CLI: `@mcp-hive/cli`*
