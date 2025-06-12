@@ -27,6 +27,7 @@
           {
             "group": "For Hive Creators",
             "pages": [
+              "products/mcp-hive/creators/progress-updates",
               "products/mcp-hive/creators/best-practices",
               "products/mcp-hive/creators/troubleshooting"
             ]
